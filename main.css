@@ -44,15 +44,15 @@ a{
     align-items: center;
     width: 80%;
     position: fixed;
-    right: 0;
-    left: 0;
     top: 30px;
-    margin: auto;
+    left: 33%;
+    transform: translateX(-50%);
     -webkit-backdrop-filter: blur(10px); 
     background-color: rgba(243, 223, 223, 0.5); 
     border: 1px solid rgb(171, 171, 243);
     z-index: 1000; 
 }
+
 .div_icon_burger{
     display: none;
 }
@@ -461,6 +461,9 @@ footer hr {
     .navbar{
         flex-direction: column;
         padding: 14px 20px;
+        width: 53%;
+        left: 20;
+        margin: 0;
     }
     .navbar_ket{
         display: none;
