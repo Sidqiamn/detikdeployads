@@ -1,13 +1,14 @@
 // Cek ukuran viewport dan set image src saat halaman pertama kali dimuat
 if (window.innerWidth >= 360 && window.innerWidth <= 640) {
-    const getImageCover = document.getElementsByClassName("img_cover_awal")[0]; // Akses elemen pertama
-    const about_mobile = document.getElementsByClassName("about_mobile")[0]
-    const explore_thailan_logo = document.getElementsByClassName("explore_Thailand")[0]
-    getImageCover.src = "http://127.0.0.1:5500/image/mobile_cover1.png";
-    about_mobile.src = "http://127.0.0.1:5500/image/about-mobile.png";
-    explore_thailan_logo.src ="http://127.0.0.1:5500/image/footer_img.png";
+    const getImageCover = document.getElementsByClassName("img_cover_awal")[0];
+    const about_mobile = document.getElementsByClassName("about_mobile")[0];
+    const explore_thailan_logo = document.getElementsByClassName("explore_Thailand")[0];
+    
+    // Ganti dengan jalur relatif
+    getImageCover.src = "image/mobile_cover1.png";
+    about_mobile.src = "image/about-mobile.png";
+    explore_thailan_logo.src = "image/footer_img.png";
 }
-
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 2.5,
     spaceBetween: 20,
@@ -18,17 +19,16 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 const imageCoverSrcs = [
-    'http://127.0.0.1:5500/image/cover_awal.png',
-    'http://127.0.0.1:5500/image/cover_awal2.png',
-    'http://127.0.0.1:5500/image/cover_awal3.png'
+    'image/cover_awal.png',
+    'image/cover_awal2.png',
+    'image/cover_awal3.png'
 ];
 
 const mobileImageCoverSrcs = [
-    'http://127.0.0.1:5500/image/mobile_cover1.png',
-    'http://127.0.0.1:5500/image/mobile_cover2.png',
-    'http://127.0.0.1:5500/image/mobile_cover3.png'
+    'image/mobile_cover1.png',
+    'image/mobile_cover2.png',
+    'image/mobile_cover3.png'
 ];
-
 const slides = document.querySelectorAll('.swiper-slide');
 const imageCover = document.querySelector('.img_cover_awal');
 
