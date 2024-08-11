@@ -44,15 +44,15 @@ a{
     align-items: center;
     width: 80%;
     position: fixed;
+    right: 0;
+    left: 0;
     top: 30px;
-    left: 33%;
-    transform: translateX(-50%);
+    margin: auto;
     -webkit-backdrop-filter: blur(10px); 
     background-color: rgba(243, 223, 223, 0.5); 
     border: 1px solid rgb(171, 171, 243);
     z-index: 1000; 
 }
-
 .div_icon_burger{
     display: none;
 }
@@ -459,11 +459,24 @@ footer hr {
         margin-left: 0px;
     }
     .navbar{
-        flex-direction: column;
-        padding: 14px 20px;
-        width: 53%;
-        left: 20;
-        margin: 0;
+     
+            display: flex;
+            border-radius: 50px;
+            justify-content: space-between;
+            padding: 20px 32px;
+            align-items: center;
+            width: 50%;
+            position: fixed;
+            top: 30px;
+            left: 25%;
+            transform: translateX(-50%);
+            -webkit-backdrop-filter: blur(10px); 
+            background-color: rgba(243, 223, 223, 0.5); 
+            border: 1px solid rgb(171, 171, 243);
+            z-index: 1000; 
+            flex-direction: column;
+    
+        
     }
     .navbar_ket{
         display: none;
