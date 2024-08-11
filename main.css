@@ -465,10 +465,10 @@ footer hr {
             justify-content: space-between;
             padding: 20px 32px;
             align-items: center;
-            width: 50%;
+            width: 80%;
             position: fixed;
             top: 30px;
-            left: 25%;
+            left: 50%;
             transform: translateX(-50%);
             -webkit-backdrop-filter: blur(10px); 
             background-color: rgba(243, 223, 223, 0.5); 
@@ -645,10 +645,10 @@ footer hr {
     .active{
         display: flex;
     }
-    html, body {
-        overflow-x: hidden;
-    }
-    
+html, body {
+    overflow-x: hidden;
+}
+
 }
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
     .navbar_ket{
