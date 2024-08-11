@@ -645,7 +645,10 @@ footer hr {
     .active{
         display: flex;
     }
-
+    html, body {
+        overflow-x: hidden;
+    }
+    
 }
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
     .navbar_ket{
